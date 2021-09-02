@@ -307,6 +307,21 @@ class FlameBase(Sim1D):
         """
         return self.profile(self.flame, 'lambda')
 
+    # Soot Variables
+    @property    
+    def S_N(self):
+        """
+        Array containing the soot number density [mol/kg] at each point.
+        """
+        return self.profile(self.flame, 'soot_number')
+
+    @property
+    def S_C(self):
+        """
+        Array containing the soot number density [mol/kg] at each point.
+        """
+        return self.profile(self.flame, 'soot_carbon')
+
     def elemental_mass_fraction(self, m):
         r"""
         Get the elemental mass fraction :math:`Z_{\mathrm{mass},m}` of element

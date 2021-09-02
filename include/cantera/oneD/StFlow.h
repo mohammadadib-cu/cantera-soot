@@ -24,7 +24,9 @@ const size_t c_offset_V = 1; // strain rate
 const size_t c_offset_T = 2; // temperature
 const size_t c_offset_L = 3; // (1/r)dP/dr
 const size_t c_offset_E = 4; // electric poisson's equation
-const size_t c_offset_Y = 5; // mass fractions
+const size_t c_offset_S_N = 5; // soot number density
+const size_t c_offset_S_C = 6; // soot number density
+const size_t c_offset_Y = 7; // mass fractions
 
 class Transport;
 
